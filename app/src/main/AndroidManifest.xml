@@ -12,16 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEjercicios">
         <activity
-            android:name=".registroActivity"
+            android:name=".CrearRutinaActivity"
             android:exported="false" />
         <activity
-            android:name=".loginActivity"
+            android:name=".principalActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".registroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
