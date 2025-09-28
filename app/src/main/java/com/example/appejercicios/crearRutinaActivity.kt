@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class CrearRutinaActivity : AppCompatActivity() {
+class crearRutinaActivity : AppCompatActivity() {
 
     var btnCancelarRutina : Button ?= null;
 

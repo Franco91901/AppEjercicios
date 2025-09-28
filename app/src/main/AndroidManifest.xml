@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEjercicios">
         <activity
-            android:name=".CrearRutinaActivity"
+            android:name=".crearRutinaActivity"
             android:exported="false" />
         <activity
             android:name=".principalActivity"
