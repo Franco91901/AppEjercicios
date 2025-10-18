@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNombreEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+
+        <EditText
+            android:id="@+id/etDescripcionEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Medida"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spTipoMedidaEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dificultad"
+            android:layout_marginTop="10dp"/>
+        <Spinner
+            android:id="@+id/spDificultadEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categorías:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbPecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pecho" />
+
+            <CheckBox
+                android:id="@+id/cbBrazos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brazos" />
+
+            <CheckBox
+                android:id="@+id/cbEspalda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espalda" />
+
+            <CheckBox
+                android:id="@+id/cbPiernas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piernas" />
+
+            <CheckBox
+                android:id="@+id/cbAbdominales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdominales" />
+
+            <CheckBox
+                android:id="@+id/cbCardio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardio" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
