@@ -75,20 +75,11 @@ class PrincipalActivity : AppCompatActivity() {
         rvRutinas.layoutManager = LinearLayoutManager(this)
 
         // Rutina de ejemplo
-        val rutinaDelDia = Rutina(
-            idRutina = 1,
-            idUsuario = 1,
-            nombreRutina = "Rutina de Ejemplo",
-            descripcion = "Rutina mixta con descanso y ejercicios por tiempo"
-        )
+        val rutinaDelDia = Rutina(1, 1, "Rutina de Ejemplo", "Rutina mixta con descanso y ejercicios por tiempo")
 
         listaRutinas.add(rutinaDelDia)
 
-        val diaRutinaCambiable = DiaRutina(
-            idDiaRutina = 1,
-            idRutina = rutinaDelDia.idRutina,
-            diaSemana = 6 // colocar dia
-        )
+        val diaRutinaCambiable = DiaRutina(1, rutinaDelDia.idRutina, 6) //colocar dia
 
         listaDiasRutina.add(diaRutinaCambiable)
 
